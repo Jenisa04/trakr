@@ -1,0 +1,144 @@
+:root {
+  --primary: #2563eb; /* Main blue accent */
+  --primary-dark: #1d4ed8; /* Hover blue */
+  --primary-light: #dbeafe; /* Light blue background */
+  --border-color: #e5e7eb;
+  --bg-light: #f9fafb;
+  --text-dark: #1f2937;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  width: 320px;
+  padding: 12px;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  max-height: 500px;
+  overflow: hidden;
+}
+
+h2,
+h3 {
+  color: var(--primary);
+  margin-top: 0;
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 6px 8px;
+  margin: 4px 0;
+  width: 100%;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+#trackBtn,
+#exportBtn,
+#toggleJobsBtn {
+  background-color: var(--primary);
+  color: white;
+}
+
+#trackBtn:hover,
+#exportBtn:hover,
+#toggleJobsBtn:hover {
+  background-color: var(--primary-dark);
+}
+
+#clearBtn {
+  background-color: var(--primary-light);
+  color: var(--primary);
+}
+
+#clearBtn:hover {
+  background-color: #bfdbfe;
+}
+
+#message {
+  color: green;
+  font-size: 0.9em;
+}
+
+#toggleJobsBtn {
+  margin-top: 8px;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 6px;
+}
+
+#toggleJobsBtn:hover {
+  background-color: var(--primary-dark);
+}
+
+#jobsContainer {
+  margin-top: 10px;
+}
+
+#searchInput {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 6px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+#jobTable {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--border-color);
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+#jobTable thead {
+  position: sticky;
+  top: 0;
+  background: var(--primary-light);
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+#jobBody {
+  display: block;
+  max-height: 220px; /* control visible height */
+  overflow-y: auto;
+}
+
+#jobTable thead,
+#jobTable tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+th,
+td {
+  border-bottom: 1px solid var(--border-color);
+  padding: 6px;
+  font-size: 13px;
+  text-align: left;
+  word-break: break-word;
+}
+
+tr:hover {
+  background-color: #f3f4f6;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #d33;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 2px 4px;
+  transition: color 0.2s;
+}
+
+.delete-btn:hover {
+  color: #a00;
+}

@@ -1,0 +1,26 @@
+# ---- OS / System ----
+.DS_Store
+Thumbs.db
+
+# ---- Node / Build tools (if you add them later) ----
+node_modules/
+dist/
+build/
+.env
+.env.local
+package-lock.json
+yarn.lock
+
+# ---- Editor / IDE ----
+.vscode/
+.idea/
+*.log
+
+# ---- Chrome Extension Specific ----
+# Sometimes Chrome adds a zip or test file during packaging
+*.crx
+*.pem
+*.zip
+
+# ---- Misc ----
+assets/temp/

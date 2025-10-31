@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trakr</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h2>Smart Job Tracker</h2>
+    <button id="trackBtn">📌 Track This Job</button>
+
+    <div id="message"></div>
+    <hr />
+    <h3>Jobs List<span id="jobCount"></span></h3>
+
+    <button id="toggleJobsBtn">👁️ View Jobs</button>
+
+    <div id="jobsContainer" style="display: none">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search by company name..."
+        style="
+          width: 100%;
+          margin-bottom: 8px;
+          padding: 6px;
+          border: 1px solid #ddd;
+          border-radius: 6px;
+        "
+      />
+      <table id="jobTable">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Role</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="jobBody"></tbody>
+      </table>
+
+      <button id="exportBtn">⬇️ Export CSV</button>
+      <button id="clearBtn">🗑️ Clear All</button>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

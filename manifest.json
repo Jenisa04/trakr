@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Trakr",
+  "version": "1.0",
+  "description": "Track your job application in one click.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.linkedin.com/*",
+        "*://*.jobright.ai/*",
+        "*://*.wellfound.com/*",
+        "*://*.indeed.com/*",
+        "*://*.lever.co/*",
+        "*://*.greenhouse.io/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
