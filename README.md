@@ -5,6 +5,10 @@ Tired of losing track of where you applied?
 
 ---
 
+⭐ If this helps your job hunt, please give it a star!
+
+---
+
 ## ✨ Features
 
 - 📌 One-click “Track” button to save any job
@@ -35,3 +39,12 @@ Tired of losing track of where you applied?
 3. Enable Developer Mode
 4. Click Load unpacked → select the Trakr/ folder
 5. Open a job page → click the Trakr icon → Track this job
+
+---
+
+## 💬 Feedback & Support
+
+⭐ **If you like Trakr, give it a star on GitHub — it helps more people find it!**
+
+💭 Have ideas, feature requests, or found a bug?  
+→ [Submit anonymous feedback here](https://forms.gle/XP41Gtr4Xw4rGrfAA)
